@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>calorie</title>
+  
+  
+  
+ <!-- <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css"> -->
+   <link rel="stylesheet" href="css/theme.css"> 
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="codiqa.ext.css">
+  
+ <!-- <link rel="stylesheet" href="https://codiqa.com/view/82739ae0/css"> -->
+  
+  <!-- jQuery and jQuery Mobile -->
+ <!-- <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>  -->
+  
+   <script src="js/jquery-1.9.1.min.js"></script>
+   <script src="js/jquery.mobile-1.3.1.min.js"></script> 
+
+  <!-- Extra Codiqa features -->
+  <!-- <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+   
+  <script src="https://codiqa.com/view/82739ae0/js"></script>  -->
+  <script  src="js/main.js" />  <!--added by me now, working on it -->
+  
+  
+  
+  
+
+  <script type="text/javascript">
+  
+  
+  function COptions(){
+     alert("hello World!");
+      //document.writeln("Hello World!");
+    }  ;
+  
+  
+  
+
+
+        
+    
+       
+ 
+ 
+  
+  </script>
+  
+ 
+  
+   <script>
+            try {
+
+    $(function() {
+
+    });
+
+  }
+  catch (error) {
+    console.error("Your javascript has an error: " + error);
+  }
+        </script>
+  
+  
+</head>
+<body>
+  <div data-role="page" data-control-title="Home" id="page1">
+      <div id="header" data-theme="a" data-role="header">
+          <h3 id="header_txt">
+              Calorie Burned
+          </h3>
+      </div>
+      <form  name="form" id="form">
+      <div data-role="content">
+                <form  name="form" id="form">                    
+                    <div class="form-input" data-role="fieldcontain" data-controltype="textinput">
+                        <label for="textinput2">
+                            Weight 
+                        </label>
+                        <input name = "weight" id="#weight" placeholder="Enter weight (in lbs) " value="" data-mini="true" type="number"/>
+                    </div>
+                    <div id="exercise_type" data-role="fieldcontain" data-controltype="radiobuttons"   >
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            <legend>
+                                Choose Type of Exercise:
+                            </legend>
+                            <input id="radio1" name="exercise_type" value="walking" type="radio"/>
+                            <label for="radio1">
+                                Walking
+                            </label>
+                            <input id="radio2" name="exercise_type" value="running" type="radio"/>
+                            <label for="radio2">
+                                Running
+                            </label>
+                            <input id="radio3" name="exercise_type" value="cycling" type="radio"/>
+                            <label for="radio3">
+                                Cycling
+                            </label>
+                            <!-- <input id="radio4" name="exercise_type" value="swimming" type="radio"/>
+                            <label for="radio4">
+                                Swimming
+                            </label> -->
+                            
+                        </fieldset>
+                    </div>
+                     <div class="form-input" data-role="fieldcontain" data-controltype="textinput">
+                        <label for="textinput3">
+                            Duration 
+                        </label>
+                        <input name = "duration" id="duration" placeholder="Enter duration (in minute) " value="" data-mini="true" type="number"/>
+                    </div>
+                    
+                    <div data-role="fieldcontain" data-controltype="selectmenu">
+                        <label for="intensity">
+                            Intensity:
+                        </label>
+                        <select id="intensity" name="intensity" data-mini="true">
+                            
+                        </select>
+                    </div>
+                    
+                    <input  class="button" id="submit" data-icon="arrow-d" data-iconpos="top" value="Submit" data-mini="true" type="submit"/>
+                    
+                </form>
+            </div>
+            <div id="footer" data-theme="a" data-role="footer" data-position="fixed">
+                <h3 id="footer_txt">
+                    A simple calorie calculator
+                </h3>
+            </div>
+        </div> 
+</body>
+</html>
